@@ -56,9 +56,9 @@ class InnerPageSeeder extends Seeder
 
 
         $image = [
-            'standalone-img1.jpg',
-            'standalone-img2.jpg',
-            'standalone-img3.jpg',
+            'standalonepage.jpg',
+            'standalonepage.jpg',
+            'standalonepage.jpg',
            
         ];
 

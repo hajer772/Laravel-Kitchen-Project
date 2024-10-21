@@ -10,13 +10,13 @@ class ClientSeeder extends Seeder
 {
     public function run()
     {
-        $logos = ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.png', '10.jpg'];
+        $logos = ['client-1.png', 'client-1.png', 'client-1.png', 'client-1.png'];
         for ($c = 0; $c < count($logos); $c++) {
             $client = Client::create([
                 'status' => 1
             ]);
             $client->file()->create([
-                'path' => 'seeders/clients/' . $logos[$c],
+                'path' => 'seeders/images/' . $logos[$c],
                 'type' => 'image'
             ]);
         }

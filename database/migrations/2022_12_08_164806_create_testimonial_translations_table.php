@@ -19,6 +19,7 @@ class CreateTestimonialTranslationsTable extends Migration
             $table->string('locale')->index();
             $table->string('title')->nullable();
             $table->string('client_name')->nullable();
+            $table->string('position')->nullable();
             $table->longText('description')->nullable();
 
             $table->unique(['testimonial_id', 'locale']);

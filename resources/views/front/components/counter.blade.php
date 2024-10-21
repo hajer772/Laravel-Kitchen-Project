@@ -13,9 +13,7 @@
                    
                     @if ($count === 2 )
                         <div class="col-lg-4 col-md-4 py-5 py-md-0">
-                            <p class="center-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mauris
-                                arcu,
-                                lobortis id interdum vitae, interdum eget elit. </p>
+                            <p class="center-para">{{__('words.counter-paragraph')}} </p>
                         </div>
                     @endif
                     <div class="col-lg-4 col-md-4 {{ $count===2 ? 'col-sm-4 bottom10':'' }}">

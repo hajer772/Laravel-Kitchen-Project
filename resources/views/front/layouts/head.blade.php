@@ -12,17 +12,40 @@
     <!-- Favicon -->
     <link href="{{ asset('front-assets/vendor/img/favicon.ico') }}" rel="icon">
     <!-- Bundle -->
-    <link rel="stylesheet" href="{{ asset('front-assets/vendor/css/bundle.min.css') }}">
     <!-- Revolution Slider CSS Files -->
-    <link rel="stylesheet" href="{{ asset('front-assets/vendor/css/revolution-settings.min.css') }}">
     <!-- Plugin Css -->
+    
+    
+    
+    
+    @if (app()->getLocale() == 'ar')
+    <link rel="stylesheet" href="{{ asset('front-assets/vendor/css/revolution-settings.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('front-assets/vendor/css/bundle.min.ar.css') }}">
     <link href="{{ asset('front-assets/vendor/css/LineIcons.min.css') }}" rel="stylesheet">
     <link href="{{ asset('front-assets/vendor/css/jquery.fancybox.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('front-assets/vendor/css/owl.carousel.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('front-assets/vendor/css/wow.ar.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('front-assets/vendor/css/cubeportfolio.min.ar.css') }}">
+    <link href="{{ asset('front-assets/css/line-awesome.min.ar.css') }}" rel="stylesheet">
+    <!-- Style Sheet -->
+    <link href="{{ asset('front-assets/css/style.ar.css') }}" rel="stylesheet">
+    
+    @else
+    
+    <link rel="stylesheet" href="{{ asset('front-assets/vendor/css/revolution-settings.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('front-assets/vendor/css/bundle.min.css') }}">
+    <link href="{{ asset('front-assets/vendor/css/LineIcons.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('front-assets/vendor/css/jquery.fancybox.min.css') }}" rel="stylesheet">
+
     <link href="{{ asset('front-assets/vendor/css/owl.carousel.min.css') }}" rel="stylesheet">
     <link href="{{ asset('front-assets/vendor/css/wow.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('front-assets/vendor/css/cubeportfolio.min.css') }}">
     <link href="{{ asset('front-assets/css/line-awesome.min.css') }}" rel="stylesheet">
     <!-- Style Sheet -->
     <link href="{{ asset('front-assets/css/style.css') }}" rel="stylesheet">
+        
+    @endif
+
     <link href="{{ asset('front-assets/css/custom.css') }}" rel="stylesheet">
+
 </head>

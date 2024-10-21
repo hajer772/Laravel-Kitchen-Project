@@ -1591,15 +1591,48 @@ audio, video, canvas {
 }
 
 .page-title{
-    position:relative;
+   position:relative;
+    height: 100%;
+    max-width: 100%;
     text-align:center;
     padding: 0 0 500px 0;
-    background:url("../images/standalone.jpg");
+    background:url("../../uploads/seeders/images/standalone-header.jpg");
     background-size: cover;
-}
+} 
 
 .page-title .auto-container{
     position:relative;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Adjust opacity as needed */
+}
+
+.subbanner {
+    position: relative; /* Make the subbanner relative to allow for positioning */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 500px;
+    padding-bottom: 50px;
+}
+
+.subbanner img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2; /* Place the image above the overlay */
 }
 
 .standalone-footer {
@@ -2010,3 +2043,31 @@ audio, video, canvas {
 }
 
 @media screen and (max-width: 575.98px) {}
+
+
+.message .close {
+    cursor: pointer;
+    float: right;
+
+}
+
+#flash-message {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999; /* Adjust the z-index as needed */
+}
+
+
+
+.subbanner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 500px;
+    padding-bottom: 50px;
+}
+a{
+    text-decoration: none !important;
+}

@@ -335,63 +335,54 @@ return [
     "arabic" => "العربية",
     "english" => "English",
 
-    //Coffee Data
-    //"home"=>"Home",
-    "about"=>"About Coffee",
-    "menu"=>"Our Menu",
-    "review"=>"Reviews",
-    "news"=> "News & Blog",
-    "order-now"=>"Order Now",
-    "megaone"=> "We are MegaOne Company",
+    //Kitchen Data
+    "about-us" => "About Us",
+    "design" => "Kitchen Designs",
+    "review" => "Client Reviews",
+    "contact-us" => "Contact Us",
 
-    "place-order"=>"Place your Order Here",
-    "city"=>"City /Block no",
-    "explain"=>"Please explain your order in detail.",
-    "contact-phone"=>"Contact by phone is preferred",
-    "Submit_Now"=>"Submit Now", 
+    "love_made" => "2023 Mega One. Made With Love By ",
+    "theme" => "Themes industry",
 
-    "love_made"=>"2023 Mega One. Made With Love By ",
-    "theme"=>"Themes industry",
+    "about-subtitle" => "Kitchen Designers",
+    "about-title" => "We are World’s Leading",
+    "about-paragraph" => "Lorem ipsum is simply dummy text of the printing and typesetting. Lorem Ipsum has been the industry’s standard dummy.  Lorem Ipsum has been the industry’s standard dummy.",
 
-    "date-web"=> "Dec 14, 2020",
-    "blog-title"=>"Coffee Blogs",
-    "blog-paragraph"=>"Lorem ipsum is simply dummy text of the printing and typesetting. Lorem Ipsum has been the industry’s standard dummy.  Lorem Ipsum has been the industry’s standard dummy.",
-    "blog-button"=> "Read Blog",
+    'quote-paragraph' => "Lorem Ipsum dolor sit amet",
+    'quote-title' => "Let us build your kitchen!",
+    'quote-btn' => "Learn More",
 
-    "about-subtitle"=>"Top quality coffee",
-    "about-title"=>"Best Coffee in Town",
-    "about-paragraph"=>"Lorem ipsum is simply dummy text of the printing and typesetting. Lorem Ipsum has been the industry’s standard dummy.  Lorem Ipsum has been the industry’s standard dummy.",
+    'counter-paragraph' => "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mauris arcu,lobortis id interdum vitae, interdum eget elit.",
 
- 
+    "contact-detail-title" => "Head Office",
+    'contact-detail-paragraph' => "There are many variations of passages of Lorem Ipsum available, but the majority have suffered.",
+    "contact-address" => "123 Park Avenue, New York, United States",
+    "contact-form-title" => "Let’s Get In Touch",
+    "contact-input-name" => "Your Name",
+    "contact-input-email" => "Email",
+    "contact-input-subject" => "Subject",
+    "contact-textarea" => "Your Message",
+    "contact-button" => "Send Message",
 
-    "menu-subtitle"=>"Top quality coffee",
-    "menu-title"=>"Our Coffee Menu",
-    "menu-paragraph"=>"Lorem ipsum is simply dummy text of the printing and typesetting. Lorem Ipsum has been the industry’s standard dummy. Lorem Ipsum has been the industry’s standard dummy.",
-    "menu-all"=>"All Products",
-    "menu-hover-img"=>"Coffee Cup",
-    "menu-hot"=>"Hot",
-    "menu-cold"=>"Cold",
-    "menu-espresso"=>"Espresso",
-    "menu-ice-cream"=>"Ice cream",
+    "stand-inner-sec-subtitle" => "Most flexible one page",
+    "stand-inner-sec-title" => "StandAlone Page",
+    "stand-inner-sec-paragraph" => "Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor justo sed mi finibus, vel tristique risus faucibus.",
+    
+    "portfolio-hover-img-title" => "View Large",
+    "portfolio-hover-img-p" => "See Our Amazing Work",
+    "portfolio-paragraph" => "Lorem ipsum is simply dummy text of the printing and typesetting. Lorem Ipsum has been the industry’s standard dummy. Lorem Ipsum has been the industry’s standard dummy.",
+    "portfolio-subheading" =>'Lorem ipsum dolor sit amet,',
+    'portfolio-headingPart1'=>'We have',
+    'portfolio-heading-greenPart'=>'designed,created',
+    'portfolio-headingPart2'=>'some beautiful Kitchens',
+    'portfolio-all-options'=>'All',
+    
+    "client-subheading" =>'Lorem ipsum dolor sit amet,',
+    'client-headingPart1'=>'Clients All Over the',
+    'client-headingPart2'=>'World Loves Our Work!',
 
-    "contact-title"=>"Place your order",
-    "contact-input-name"=>"Your Name",
-    "contact-input-email"=>"Email",
-    "contact-input-contact"=>"Contact",
-    "contact-textarea"=>"Coffee Details",
-    "contact-button"=>"Send Message",
 
-    "review-title"=>"Coffee Lovers",
-
-    "stand-banner-title"=>"StandAlone Page",
-    "stand-banner-path1"=>"Home",
-    "stand-banner-path2"=>"StandAlone",
-
-    "stand-inner-sec-subtitle"=>"Most flexible one page",
-    "stand-inner-sec-title"=> "Section Title",
-    "stand-inner-sec-paragraph"=> "Lorem ipsum is simply dummy text of the printing and typesetting. Lorem Ipsum has been the industry’s standard dummy. Lorem Ipsum has been the industry’s standard dummy.",
-
-    "message-confirmation"=>"Your order has been sent successfully. Thank you!",
+    "message-confirmation" => "Your order has been sent successfully. Thank you!",
 
 
 

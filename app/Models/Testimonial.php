@@ -18,7 +18,7 @@ class Testimonial extends Model
 
     protected $appends = ['image'];
 
-    public $translatedAttributes = ['title', 'client_name', 'description'];
+    public $translatedAttributes = ['title', 'client_name', 'description','position'];
 
     public $timestamps = true;
 

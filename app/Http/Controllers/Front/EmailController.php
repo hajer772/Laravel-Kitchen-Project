@@ -11,19 +11,27 @@ use App\Mail\MyEmail;
 
 class EmailController extends Controller
 {
-    public function send(Request $request)
+    public function sendmessage(Request $request)
     {
+
+        // Validate input data (adjust validation rules as needed)
+        $request->validate([
+            'userName' => 'required|string',
+            'userMessage' => 'required|string',
+            'userEmail' => 'required|email',
+            'userSubject' => 'required|string',
+        ]);
+
         $formData = [
             'userName' => $request->input('userName'),
-            'emailmessage' => $request->input('userMessage'),
-            'email' => $request->input('userEmail'),
-            'contact' => $request->input('contact'),
-
+            'userMessage' => $request->input('userMessage'),
+            'userEmail' => $request->input('userEmail'),
+            'userSubject' => $request->input('userSubject'),
         ];
-        //   Mail::to('hagerashry0@gmail.com')->send(new MyEmail($name));
-        Mail::to($formData['email'])->send(new MyEmail($formData));
-        // return view("front.index");
 
+        if ($formData !== null && !empty($formData['userEmail'])) {
+            Mail::to($formData['userEmail'])->send(new MyEmail($formData));
+        }
 
         return redirect()->back()->with('success', '');
     }

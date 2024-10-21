@@ -1,5 +1,5 @@
     <!-- Some Services -->
-    <div class="container">
+    <div class="container" dir="{{ App::isLocale('ar') ? 'ltr' : 'ltr' }}">
         <div class="row">
             <div class="col-md-12">
                 <div id="sync2" class="owl-carousel owl-theme services-slider wow fadeInUp" data-wow-duration="1s"
@@ -18,7 +18,8 @@
             </div>
         </div>
         <div class="service-image">
-            <img src="{{ asset('front-assets/images/service.jpg') }}" alt="Service">
+            <img src="{{ asset('front-assets/images/kitchen10.jpg') }}" alt="Service">
         </div>
     </div>
+    
     <!-- Some Services -->

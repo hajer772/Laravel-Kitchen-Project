@@ -11,10 +11,10 @@ class SliderSeeder extends Seeder
     public function run()
     {
         $images = [
-            'slider-img-1.jpg',
-            'slider-img-2.jpg',
-            'slider-img-3.jpg',
-            'slider-img-4.jpg'
+            'kitchen2.jpg',
+            'kitchen2.jpg',
+            'kitchen2.jpg',
+            'kitchen2.jpg'
         ];
 
         $title_en = [
@@ -41,10 +41,11 @@ class SliderSeeder extends Seeder
         ];
 
         $description_ar = [
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mauris arcu.",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mauris arcu.",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mauris arcu.",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mauris arcu."
+            "لوريم إيبسوم دولور سيت أميت، consectetur adipiscing إيليت. نونك موريس آركو.",
+            "لوريم إيبسوم دولور سيت أميت، consectetur adipiscing إيليت. نونك موريس آركو.",
+            "لوريم إيبسوم دولور سيت أميت، consectetur adipiscing إيليت. نونك موريس آركو.",
+            "لوريم إيبسوم دولور سيت أميت، consectetur adipiscing إيليت. نونك موريس آركو.",
+            
         ];
 
         $icon = [

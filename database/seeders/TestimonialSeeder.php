@@ -24,6 +24,8 @@ class TestimonialSeeder extends Seeder
         "It's fine"];
         $client_name_en = ['Mandy Rose', 'Sara Williams', 'Hager Mahmoud', 'Salma Ali'];
 
+        $position_en=['Businessman', 'Interior Designer', 'Company Owner', 'Designer'];
+        $position_ar=['رجل أعمال', 'مصمم داخلي', 'مالك الشركة', 'مصمم'];
 
 
 
@@ -37,19 +39,26 @@ class TestimonialSeeder extends Seeder
                 'ar' => [
                     // 'title' => $titles[$s],
                     'client_name' => $client_name_ar[$s],
-                    'description' => $descriptions_ar[$s]
+                    'description' => $descriptions_ar[$s],
+                    'position' => $position_ar[$s],
                 ],
                 'en' => [
                     // 'title' => $titles[$s],
                     'client_name' => $client_name_en[$s],
-                    'description' => $descriptions_en[$s]
+                    'description' => $descriptions_en[$s],
+                    'position' => $position_en[$s],
+
                 ],
                 'status' => 1
             ]);
             $testimonial->file()->create([
-                'path' => 'seeders/front/images/' . $images[$s],
+                'path' => 'seeders/images/' . $images[$s],
                 'type' => 'image'
             ]);
+
+
+
+            
         }
     }
 }

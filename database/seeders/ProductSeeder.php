@@ -17,100 +17,31 @@ class ProductSeeder extends Seeder
     {
 
         $image = [
-            '1.jpg',
-            '2.jpg',
-            '3.jpg',
-            '4.jpg',
-            '5.jpg',
-            '6.jpg',
-            '7.jpg',
-            '8.jpg',
-            '9.jpg',
-            '10.jpg',
-            '11.jpg',
-            '12.jpg',
-
+            'kitchen1.jpg',
+            'kitchen2.jpg',
+            'kitchen3.jpg',
+            'kitchen10.jpg',
+            "kitchen5.jpg",
+            'kitchen6.jpg',
+            'kitchen7.jpg',
+            'kitchen8.jpg',
         ];
-        $title_en = [
-            "Iced Coffee",
-            "Tea With Milk",
-            "Iced Tea",
-            "Tea",
-            "Latte",
-            "Iced Latte",
-            "Latte",
-            "Latte tea",
-            "Milk Shake ",
-            "Coffee",
-            "Espresso",
-            "Ice cream with coffee ",
-        ];
+        $cat_name = [
+      'graphic','graphic',"", 'web-design', 'web-design', 'marketing', 'marketing','marketing'
 
-        $title_ar = [
-            "قهوة مثلجة",
-            "شاي بالحليب",
-            "شاي مثلج",
-            "شاي",
-            "لاتيه",
-            "لاتيه مثلج",
-            "لاتيه",
-            "شاي لاتيه",
-            "ميلك شيك",
-            "قهوة",
-            "إسبريسو",
-            "آيس كريم بالقهوة",
-        ];
-
-        $price = [
-
-            "10$",
-            "5$ ",
-            "5$",
-            "3$",
-            "15$",
-            "15$",
-            "15$",
-            "20$",
-            "30$",
-            "12.5$",
-            "25$",
-            "40$",
-        ];
-
-        $cat_no = [
-            1,
-            2,
-            1,
-            2,
-            2,
-            1,
-            2,
-            2,
-            1,
-            2,
-            3,
-            4,
         ];
 
         for ($i = 0; $i < count($image); $i++) {
             $product = Product::create(
                 [
-                    'ar' => [
-                        'title' => $title_ar[$i],
-                        'price' => $price[$i],
-                    ],
-                    'en' => [
-                        'title' => $title_en[$i],
-                        'price' => $price[$i],
-                    ],
                     'status' => 1,
-                    'category_id' =>$cat_no[$i],
-                
+                    'category_name' => $cat_name[$i],
+
 
                 ]
             );
             $product->file()->create([
-                'path' => 'seeders/front/images/' . $image[$i],
+                'path' => 'seeders/images/' . $image[$i],
                 'type' => 'image',
             ]);
         }

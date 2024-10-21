@@ -425,3 +425,15 @@ jQuery(function ($) {
         dotCanvas();
     }
 });
+
+
+/*============================================
+    For Confirmation message after send order
+==============================================*/
+document.querySelector('.message .close').addEventListener('click', function () {
+    this.parentNode.style.display = 'none';
+});
+
+setTimeout(function () {
+    $('#flash-message').fadeIn('slow').delay(3000).fadeOut('slow');
+}, 2000); // Adjust the delay as needed

@@ -29,9 +29,8 @@
             </div>
             <!--Text-->
             <div class="col-md-6 text-md-right">
-                <p class="company-about fadeIn pr-0 pr-md-1">&copy; 2023 MegaOne. Made With Love By <a
-                        href="javascript:void(0);">Themesindustry</a>
-                </p>
+                <p class="company-about fadeIn pr-0 pr-md-1">&copy; {{ __("words.love_made") }} <a
+                    href="javascript:void(0);">{{ __("words.theme") }}</a></p>
             </div>
         </div>
     </div>

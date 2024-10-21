@@ -10,9 +10,9 @@
                     <div class="standalone-detail">
                         <div class="row no-gutters">
                             <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2  text-center wow slideInUp" data-wow-duration="2s">
-                                <p class="sub-heading text-center text-blue">Most flexible one page</p>
-                                <h1 class="heading">StandAlone Page</h1>
-                                <p class="para_text m-auto">Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor justo sed mi finibus, vel tristique risus faucibus.</p>
+                                <p class="sub-heading text-center text-blue">{{ __('words.stand-inner-sec-subtitle') }}</p>
+                                <h1 class="heading">{{ __('words.stand-inner-sec-title') }}</h1>
+                                <p class="para_text m-auto">{{ __('words.stand-inner-sec-paragraph') }}</p>
                             </div>
                         </div>
                     </div>

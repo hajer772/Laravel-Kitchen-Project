@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Front\AboutController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
@@ -26,7 +27,9 @@ Route::group([
 
     Route::get('/home', [HomeController::class, 'index'])->name('front.index');
 
-    Route::get('/home/standalone', [StandAloneController::class, 'index'])->name('standalone');
+    Route::get('/standalone', [StandAloneController::class, 'index'])->name('standalone');
 
-    
+    Route::get('/about', [AboutController::class, 'index'])->name(name: 'front.about');
+
+    Route::post('/testroute',  [EmailController::class, 'sendmessage'])->name(name: 'front.send');
 });
