@@ -380,6 +380,7 @@ return [
     "client-subheading" =>'Lorem ipsum dolor sit amet,',
     'client-headingPart1'=>'Clients All Over the',
     'client-headingPart2'=>'World Loves Our Work!',
+    'standalone'=>'Standalone',
 
 
     "message-confirmation" => "Your order has been sent successfully. Thank you!",

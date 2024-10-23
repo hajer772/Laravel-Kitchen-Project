@@ -73,7 +73,7 @@
                 <!--begin::Login Header-->
                 <div class="d-flex flex-center mb-15">
                     <a href="#">
-                        <img src="{{settings()->logo}}" class="max-h-75px" alt=""/>
+                        <img src="{{ asset('dashboard/media/logos/logo1.png') }}" class="max-h-75px" alt=""/>
                     </a>
                 </div>
                 <!--end::Login Header-->

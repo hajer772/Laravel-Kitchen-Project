@@ -8,7 +8,7 @@
                   {{ $pageName }}
               </h1>
               <p class="text-white mb-3">
-                  <a href="/home" class="text-white">Home </a>/ {{ $pageName }}
+                  <a href="/home" class="text-white"> {{ __('words.home') }} </a>/ {{ $pageName }}
               </p>
           </div>
       </div>

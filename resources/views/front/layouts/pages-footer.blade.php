@@ -1,6 +1,6 @@
 <!-- Start Footer Section -->
-<footer class="standalone-footer bg-light">
-    <div class="container">
+<footer >
+    <div class="container standalone-footer bg-light">
         <div class="row align-items-center">
             <!--Social-->
             <div class="col-12 text-center">
@@ -23,6 +23,10 @@
                     href="javascript:void(0);">{{ __("words.theme") }}</a></p>
             </div>
         </div>
+    </div>
+
+    <div class="developed-footer-style company-about bg-dark text-white">
+        <p>Designed & Developed by Marwan Group &copy; 2024</p>
     </div>
 </footer>
 <!-- End Footer Section -->

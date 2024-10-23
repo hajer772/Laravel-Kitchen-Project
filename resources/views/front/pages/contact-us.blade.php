@@ -4,11 +4,10 @@
 
 @section('content')
 
-    @include('front.components.banner', ['pageName'=>__("words.about-us") ])
+    @include('front.components.banner', ['pageName'=> __('words.contact-us')])
 
-    @include('front.components.about')
+    @include('front.components.contact')
 
-    @include('front.components.team')
     @include('front.layouts.pages-footer')
 
 @endsection

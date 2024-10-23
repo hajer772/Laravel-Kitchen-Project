@@ -384,6 +384,7 @@ return [
     "client-subheading" =>'لوريم إيبسوم دولور سيت أميت',
     'client-headingPart1'=>'العملاء في جميع أنحاء',
     'client-headingPart2'=>'!العالم يحبون عملنا',
+    'standalone'=>'مستقل',
 
 
 

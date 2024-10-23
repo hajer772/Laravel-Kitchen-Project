@@ -1,6 +1,6 @@
 <!-- Start Footer -->
-<footer class="footer-style-1 bg-light">
-    <div class="container">
+<footer >
+    <div class="container footer-style-1 bg-light">
         <div class="row align-items-center">
             <!--Social-->
             <div class="col-md-6">
@@ -10,20 +10,6 @@
                             <li><a class="wow fadeInUp" href="{{ $contact->contact }}" target="_blank"><i aria-hidden="true"
                                         class="{{ $contact->icon }}"></i></a></li>
                         @endforeach
-
-
-
-
-                        {{-- <li><a class="wow fadeInDown" href="javascript:void(0);"><i aria-hidden="true"
-                                    class="fab fa-twitter"></i></a></li>
-                        <li><a class="wow fadeInUp" href="javascript:void(0);"><i aria-hidden="true"
-                                    class="fab fa-google-plus-g"></i></a></li>
-                        <li><a class="wow fadeInDown" href="javascript:void(0);"><i aria-hidden="true"
-                                    class="fab fa-linkedin-in"></i></a></li>
-                        <li><a class="wow fadeInUp" href="javascript:void(0);"><i aria-hidden="true"
-                                    class="fab fa-instagram"></i></a></li>
-                        <li><a class="wow fadeInDown" href="javascript:void(0);"><i aria-hidden="true"
-                                    class="fab fa-pinterest-p"></i></a></li> --}}
                     </ul>
                 </div>
             </div>
@@ -33,6 +19,11 @@
                     href="javascript:void(0);">{{ __("words.theme") }}</a></p>
             </div>
         </div>
+       
+    </div>
+    <div class="developed-footer-style company-about bg-dark text-white">
+        <p>Designed & Developed by Marwan Group &copy; 2024</p>
     </div>
 </footer>
+
 <!-- End Footer -->

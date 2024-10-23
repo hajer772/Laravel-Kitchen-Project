@@ -4,7 +4,7 @@
 
 @section('content')
 
-    @include('front.components.banner', ['pageName'=>'Standalone '])
+    @include('front.components.banner', ['pageName'=>__('words.standalone')])
 
     @include('front.components.inner')
 

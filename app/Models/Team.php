@@ -18,7 +18,7 @@ class Team extends Model
 
     protected $appends = ['image'];
 
-    public $translatedAttributes = ['title', 'sub_title', 'description'];
+    public $translatedAttributes = ['team_name', 'position', 'description'];
 
     public $timestamps = true;
 

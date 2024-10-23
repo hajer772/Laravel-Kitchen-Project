@@ -17,7 +17,7 @@ class ProductSeeder extends Seeder
     {
 
         $image = [
-            'kitchen1.jpg',
+            'kitchen9.jpg',
             'kitchen2.jpg',
             'kitchen3.jpg',
             'kitchen10.jpg',

@@ -26,6 +26,7 @@ class DatabaseSeeder extends Seeder
         $this->call(ProductSeeder::class);
         $this->call(TestimonialSeeder::class);
         $this->call(ClientSeeder::class);
+        $this->call(TeamSeeder::class);
 
         $this->call(CounterSeeder::class);
         $this->call(InnerPageSeeder::class);

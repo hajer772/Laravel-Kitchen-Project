@@ -1,5 +1,5 @@
       <!-- Start Slider -->
-      <section class="slider position-relative" id="slider" dir="{{(App::isLocale('ar') ? 'ltr' : 'ltr')}}">
+      <section class="slider position-relative" id="slider" dir="{{ App::isLocale('ar') ? 'ltr' : 'ltr' }}">
           <div class="row">
               <div class="col-12">
                   <div id="sync1" class="owl-carousel owl-theme">
@@ -32,6 +32,6 @@
 
               </ul>
           </div>
-          
+
       </section>
       <!-- End Slider -->

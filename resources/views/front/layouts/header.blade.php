@@ -31,7 +31,7 @@
              <div class="collapse navbar-collapse" id="megaone">
                  <a href="{{ route('front.index') }}" title="Logo" class="logo">
                      <!--Logo Default-->
-                     <img src="{{ asset('front-assets/images/logo-white.png') }}" title="logo" alt="logo"
+                     <img src="{{ asset('front-assets/images/logo1.png') }}" title="logo" alt="logo"
                          class="logo-default">
                  </a>
 
@@ -39,18 +39,18 @@
                  <div class="navbar-nav ml-auto">
                      <a class="nav-link  line" href="{{ route('front.index') }}#slider">{{ __('words.home') }}</a>
                      <a class="nav-link  line" href="{{ route('front.about') }}">{{ __('words.about-us') }}</a>
-                     <a class="nav-link  line" href="{{ route('front.index') }}#portfolio">{{ __('words.design') }}</a>
+                     <a class="nav-link  line" href="{{ route('front.design') }}">{{ __('words.design') }}</a>
                      <a class="nav-link  line"
                          href="{{ route('front.index') }}#testimonials">{{ __('words.review') }}</a>
                      <a class="nav-link  line"
-                         href="{{ route('front.index') }}#contact">{{ __('words.contact-us') }}</a>
+                         href="{{ route('front.contact-us') }}">{{ __('words.contact-us') }}</a>
                  </div>
 
                  <!--begin::Languages-->
 
-                 <div class="text-white ">
+                 <div class="text-white line">
                      @foreach (LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
-                         <a class=" {{ LaravelLocalization::getCurrentLocaleNative() == $properties['native'] ? 'd-none' : '' }}"
+                         <a class="{{ LaravelLocalization::getCurrentLocaleNative() == $properties['native'] ? 'd-none' : '' }}"
                              rel="alternate" hreflang="{{ $localeCode }}"
                              href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
                              <span class="symbol  symbol-30 ">
@@ -72,8 +72,9 @@
          </div>
 
          <!--Side Menu Button-->
-         <div class="navigation-toggle">
-             <ul class="slider-social toggle-btn my-0">
+         <div class="navigation-toggle side-menu-btn ">
+             
+            <ul class="slider-social toggle-btn my-0">
                  <li>
                      <a href="javascript:void(0);" class="sidemenu_btn" id="sidemenu_toggle">
                          <span></span>
@@ -82,6 +83,8 @@
                      </a>
                  </li>
              </ul>
+
+
          </div>
      </nav>
 
@@ -91,7 +94,7 @@
              <span class="btn-close" id="btn_sideNavClose"><i></i><i></i></span>
              <a href="{{ route('front.index') }}" title="Logo" class="logo side-logo">
                  <!--Logo Default-->
-                 <img src="{{ asset('front-assets/images/logo-white.png') }}" alt="logo">
+                 <img src="{{ asset('front-assets/images/logo1.png') }}" alt="logo">
              </a>
              <nav class="side-nav w-100">
                  <ul class="navbar-nav side-navbar">
@@ -102,7 +105,7 @@
                          <a class="nav-link " href="{{ route('front.about') }}">{{ __('words.about-us') }}</a>
                      </li>
                      <li class="nav-item">
-                         <a class="nav-link " href="{{ route('front.index') }}#portfolio">{{ __('words.design') }}</a>
+                         <a class="nav-link " href="{{ route('front.design') }}">{{ __('words.design') }}</a>
                      </li>
                      <li class="nav-item">
                          <a class="nav-link "
@@ -110,8 +113,26 @@
                      </li>
                      <li class="nav-item">
                          <a class="nav-link "
-                             href="{{ route('front.index') }}#contact">{{ __('words.contact-us') }}</a>
+                             href="{{ route('front.contact-us') }}">{{ __('words.contact-us') }}</a>
                      </li>
+
+                     <li class=" nav-item text-white line">
+                        @foreach (LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
+                            <a class="{{ LaravelLocalization::getCurrentLocaleNative() == $properties['native'] ? 'd-none' : '' }}"
+                                rel="alternate" hreflang="{{ $localeCode }}"
+                                href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
+                                <span class="symbol  symbol-30 ">
+                                    @if ($localeCode == 'en')
+                                        <span class="navi-text">{{ __('words.english') }}</span>
+                                    @elseif ($localeCode == 'ar')
+                                        <span class="navi-text">{{ __('words.arabic') }}</span>
+                                    @else
+                                        <span class="navi-text">{{ $properties['native'] }}</span>
+                                    @endif
+                                </span>
+                            </a>
+                        @endforeach
+                    </li>
                  </ul>
              </nav>
 
@@ -137,6 +158,6 @@
              </div>
          </div>
      </div>
-     <a id="close_side_menu" href="javascript:void(0);"></a>
+     <a id="close_side_menu" href="javascript:void(0);"></a> 
  </header>
  <!-- End Header -->

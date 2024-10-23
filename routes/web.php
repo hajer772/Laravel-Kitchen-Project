@@ -7,6 +7,9 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 use App\Http\Controllers\Front\HomeController;
 use App\Http\Controllers\Front\EmailController;
 use App\Http\Controllers\Front\StandAloneController;
+use App\Http\Controllers\Front\ContactUsController;
+use App\Http\Controllers\Front\KitchenDesignController;
+use App\Models\ContactUs;
 
 Route::group([
     'prefix' => LaravelLocalization::setLocale(),
@@ -30,6 +33,8 @@ Route::group([
     Route::get('/standalone', [StandAloneController::class, 'index'])->name('standalone');
 
     Route::get('/about', [AboutController::class, 'index'])->name(name: 'front.about');
+    Route::get('/contact-us', [ContactUsController::class, 'index'])->name(name: 'front.contact-us');
+    Route::get('/design', [KitchenDesignController::class, 'index'])->name(name: 'front.design');
 
     Route::post('/testroute',  [EmailController::class, 'sendmessage'])->name(name: 'front.send');
 });

@@ -11,10 +11,10 @@ class SliderSeeder extends Seeder
     public function run()
     {
         $images = [
-            'kitchen2.jpg',
-            'kitchen2.jpg',
-            'kitchen2.jpg',
-            'kitchen2.jpg'
+            'kitchen1-home.jpg',
+            'kitchen2-home.jpg',
+            'kitchen1-home.jpg',
+            'kitchen2-home.jpg',
         ];
 
         $title_en = [

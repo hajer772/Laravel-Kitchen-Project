@@ -130,7 +130,7 @@ section{padding: 7.5rem 0;}
 ====================================== */
 
 header a.logo img {
-    max-width: 60px;
+    max-width: 90px;
 }
 
 .navbar-top-default{
@@ -494,6 +494,9 @@ header a.logo img {
     margin-bottom: 0;
 }
 
+.side-menu-btn {
+    display: none;
+}
 .social-icons-simple{
     margin-bottom: 0;
     margin-left: -10px;
@@ -1423,6 +1426,9 @@ audio, video, canvas {
     font-weight: normal;
     font-family: Roboto, sans-serif;
 }
+.developed-footer-style{
+text-align: center;
+}
 
 /*===================================
     Loader
@@ -1824,6 +1830,13 @@ a{
     }
 }
 
+
+@media (max-width: 991px) { 
+    .side-menu-btn {
+        display: block;
+    }
+}
+
 @media screen and (max-width: 767px) {
 
     body {
@@ -2059,8 +2072,6 @@ a{
     z-index: 9999; /* Adjust the z-index as needed */
 }
 
-
-
 .subbanner{
     display: flex;
     justify-content: center;
@@ -2070,4 +2081,32 @@ a{
 }
 a{
     text-decoration: none !important;
+}
+
+/* team style */
+  .team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.team-member-image {
+    width: 330px;
+    height: 330px;
+    overflow: hidden;
+    border-radius: 50%; 
+}
+
+.team-member-info {
+    margin-top: 20px;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.position {
+    margin-bottom: 10px;
 }

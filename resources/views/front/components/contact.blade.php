@@ -1,11 +1,4 @@
- <!-- Start Map -->
- <div class="p-0 bg-light-black map-area">
-    <div class="container">
-        <!--Map Initialize-->
-        <div class="full-map" id="map"></div>
-    </div>
-</div>
-<!-- End Map -->
+
 
 <!-- Start Contact -->
 <section class="contact-sec" id="contact">
