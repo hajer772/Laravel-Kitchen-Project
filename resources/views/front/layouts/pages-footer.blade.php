@@ -19,14 +19,13 @@
                     </ul>
                 </div>
                 <!--Text-->
-                <p class="company-about fadeIn">&copy; {{ __("words.love_made") }} <a
-                    href="javascript:void(0);">{{ __("words.theme") }}</a></p>
+                <p class="company-about fadeIn"> {{ __("words.footer-website") }} &copy; 2024</p>
             </div>
         </div>
     </div>
 
     <div class="developed-footer-style company-about bg-dark text-white">
-        <p>Designed & Developed by Marwan Group &copy; 2024</p>
+        <p>{{ __("words.footer-developer") }} &copy; 2024</p>
     </div>
 </footer>
 <!-- End Footer Section -->

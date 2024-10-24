@@ -19,6 +19,7 @@ class CreatePortfolioTranslationsTable extends Migration
             $table->string('locale')->index();
             $table->string('title')->nullable();
             $table->longText('description')->nullable();
+            $table->string('category_name')->nullable();
 
             $table->unique(['portfolio_id', 'locale']);
             $table->foreign('portfolio_id')->references('id')->on('portfolios')->onDelete('cascade');

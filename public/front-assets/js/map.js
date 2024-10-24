@@ -164,7 +164,7 @@ if ($("#map").length) {
                     ]
                 }
             ],
-            center: new google.maps.LatLng(40.712775, -74.005973) //please add your location here
+            center: new google.maps.LatLng(21.419572743103934, 39.825493684532546) //please add your location here
         };
         var map = new google.maps.Map(document.getElementById('map'),
             mapOptions);

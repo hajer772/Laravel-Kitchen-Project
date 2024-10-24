@@ -2,8 +2,7 @@
 
 namespace Database\Seeders;
 
-use App\Models\Product;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\Product;use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
 class ProductSeeder extends Seeder
@@ -17,18 +16,28 @@ class ProductSeeder extends Seeder
     {
 
         $image = [
-            'kitchen9.jpg',
+            'kitchen1.jpg',
             'kitchen2.jpg',
             'kitchen3.jpg',
-            'kitchen10.jpg',
+            'kitchen4.jpg',
             "kitchen5.jpg",
             'kitchen6.jpg',
             'kitchen7.jpg',
             'kitchen8.jpg',
+            'kitchen9.jpg',
+            'kitchen10.jpg',
         ];
         $cat_name = [
-      'graphic','graphic',"", 'web-design', 'web-design', 'marketing', 'marketing','marketing'
-
+            'graphic',
+            'graphic',
+            "seo",
+            'web-design',
+            'web-design',
+            'marketing',
+            'marketing',
+            'marketing',
+            "graphic",
+            "seo"
         ];
 
         for ($i = 0; $i < count($image); $i++) {

@@ -20,7 +20,7 @@
     </style>
 </head>
 <body >
-   <center> <img src="{{ asset('front-assets/images/logo.png') }}" alt="logo"></center>
+   <center> <img src="{{ asset('front-assets/images/logo1-black.png') }}" alt="logo"></center>
    <h1>Welcome {{ $userName }}</h1>
    <p >{{ $userMessage }}</p>
    {{-- @dd($name ) --}}

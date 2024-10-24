@@ -15,14 +15,13 @@
             </div>
             <!--Text-->
             <div class="col-md-6 text-md-right">
-                <p class="company-about fadeIn pr-0 pr-md-1">&copy; {{ __("words.love_made") }} <a
-                    href="javascript:void(0);">{{ __("words.theme") }}</a></p>
+                <p class="company-about fadeIn pr-0 pr-md-1">{{ __("words.footer-website") }}&copy; 2024</p>
             </div>
         </div>
        
     </div>
     <div class="developed-footer-style company-about bg-dark text-white">
-        <p>Designed & Developed by Marwan Group &copy; 2024</p>
+        <p style="text-align: center !important">{{ __("words.footer-developer") }}@ 2024</p>
     </div>
 </footer>
 

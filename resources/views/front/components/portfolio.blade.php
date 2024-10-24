@@ -33,7 +33,7 @@
                             @foreach ($products as $product)
                                 <div class="cbp-item {{ $product->category_name }}  m-2" >
                                     <a href="{{ $product->image }}" class="cbp-caption cbp-lightbox">
-                                        <div class="cbp-caption-defaultWrap">
+                                        <div class="cbp-caption-defaultWrap m-2">
                                             <img src="{{ $product->image }}" alt="port-1">
                                         </div>
                                         <div class="cbp-caption-activeWrap"></div>

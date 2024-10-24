@@ -61,7 +61,7 @@
 
     <link href="{{ asset('dashboard/css/custom.css') }}" rel="stylesheet" type="text/css" />
 
-    <link rel="shortcut icon" href="{{ settings()->favicon }}" />
+    <link rel="shortcut icon" href="{{ asset('front-assets/images/logo1-black.png') }}" />
 
     @yield('styles')
 

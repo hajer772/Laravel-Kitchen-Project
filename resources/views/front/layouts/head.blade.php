@@ -10,7 +10,7 @@
     <!-- Page Title -->
     <title>@yield('title')</title>
     <!-- Favicon -->
-    <link href="{{ asset('front-assets/vendor/img/favicon.ico') }}" rel="icon">
+    <link href="{{ asset('front-assets/images/logo1-black.png') }}" rel="icon">
     <!-- Bundle -->
     <!-- Revolution Slider CSS Files -->
     <!-- Plugin Css -->

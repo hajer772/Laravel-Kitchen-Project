@@ -341,8 +341,9 @@ return [
     "review" => "Client Reviews",
     "contact-us" => "Contact Us",
 
-    "love_made" => "2023 Mega One. Made With Love By ",
-    "theme" => "Themes industry",
+    "footer-website" => "All Right reversed Kitchen  ",
+    "footer-developer" => "Designed & Developed by Marwan Group ",
+    
 
     "about-subtitle" => "Kitchen Designers",
     "about-title" => "We are World’s Leading",
@@ -383,7 +384,7 @@ return [
     'standalone'=>'Standalone',
 
 
-    "message-confirmation" => "Your order has been sent successfully. Thank you!",
+    "message-confirmation" => "Your Message has been sent successfully. Thank you!",
 
 
 

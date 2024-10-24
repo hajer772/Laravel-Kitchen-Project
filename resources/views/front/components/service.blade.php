@@ -18,7 +18,7 @@
             </div>
         </div>
         <div class="service-image">
-            <img src="{{ asset('front-assets/images/kitchen10.jpg') }}" alt="Service">
+            <img src="{{ asset('front-assets/images/kitchen2-home.jpg') }}" alt="Service">
         </div>
     </div>
     

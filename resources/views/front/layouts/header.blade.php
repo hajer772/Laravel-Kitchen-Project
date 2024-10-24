@@ -10,15 +10,7 @@
 
  <!-- Start Header -->
  <header>
-    @if ($errors->any())
-    <div class="message error" >
-        <ul>
-            @foreach ($errors->all() as $error)
-                <li>{{ $error }}</li>
-            @endforeach
-        </ul>
-    </div>
-@elseif (session()->has('success'))
+    @if (session()->has('success'))
     <div id='flash-message' class="message alert alert-success alert-dismissible text-center">
         <span class="close">&times;</span>
         <strong> {{ __('words.message-confirmation') }}</strong>
@@ -153,7 +145,7 @@
                                      class="{{ $contact->icon }}"></i> </a></li>
                      @endforeach
                  </ul>
-                 <p>&copy; {{ __('words.love_made') }} {{ __('words.theme') }}
+                 <p>{{ __("words.footer-website") }}&copy; 2024
                  </p>
              </div>
          </div>
