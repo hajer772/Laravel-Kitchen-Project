@@ -25,7 +25,7 @@
     </div>
 
     <div class="developed-footer-style company-about bg-dark text-white">
-        <p>{{ __("words.footer-developer") }} &copy; 2024</p>
+        <p style="text-align: center !important">{{ __("words.footer-developer") }} &copy; 2024</p>
     </div>
 </footer>
 <!-- End Footer Section -->

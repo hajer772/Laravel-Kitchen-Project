@@ -29,18 +29,6 @@
             </div>
             @endpermission
 
-            @permission('read-projects')
-            <div class="col-xl-4">
-                <div class="card card-custom card-stretch gutter-b wave wave-primary wave-animate-slow">
-                    <div class="card-body">
-                        <i class="fas fa-project-diagram  fa-3x"></i>
-                        <span class="card-title font-weight-bolder text-dark-75 font-size-h1 mb-0 mt-6 d-block">{{ \App\Models\Project::count() }}</span>
-                        <span class="font-weight-bold font-size-sm"><a href="{{route('projects.index')}}">{{__('words.projects')}}</a></span>
-                    </div>
-                </div>
-            </div>
-            @endpermission
-
             @permission('read-services')
             <div class="col-xl-4">
                 <div class="card card-custom card-stretch gutter-b wave wave-primary wave-animate-slow">

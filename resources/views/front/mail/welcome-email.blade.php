@@ -20,9 +20,9 @@
     </style>
 </head>
 <body >
-   <center> <img src="{{ asset('front-assets/images/logo1-black.png') }}" alt="logo"></center>
+   <center> <img src="{{ asset('front-assets/images/logo1-black.png') }}" style='max-width:90px' alt="logo"></center>
    <h1>Welcome {{ $userName }}</h1>
-   <p >{{ $userMessage }}</p>
+   <pre><p >{{ $userMessage }}</p></pre>
    {{-- @dd($name ) --}}
 </body>
 </html>
